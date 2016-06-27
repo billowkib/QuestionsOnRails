@@ -1,0 +1,29 @@
+.navbar {
+  margin-bottom: 0;
+}
+
+.boxes {
+  .media {
+    border: thin solid #ddd;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: #eee;
+    position: relative;
+    height: 8em;
+    .time {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      color: #666;
+    }
+    a.btn {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: #ddd;
+    }
+  }
+}
