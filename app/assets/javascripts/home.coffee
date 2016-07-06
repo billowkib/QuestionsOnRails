@@ -1,5 +1,5 @@
 ready = ->
-  $(".media").on "click", ->
+  $(".media-question").on "click", ->
     document.location = $(this).data("target")
     return false
 
