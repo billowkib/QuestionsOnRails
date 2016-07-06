@@ -12,17 +12,6 @@ class QuestionsController < ApplicationController
     redirect_to root_path
   end
 
-  def destroy
-    @question = Question.find(params[:id])
-      if @question && @question.destroy
-        redirect_to root_path
-      else
-        flash[:error] = @question.errors
-        redirect_to question_path(@question)
-      end
-    end
-  end
-
   private
 
   def question_params

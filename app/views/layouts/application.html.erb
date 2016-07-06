@@ -12,9 +12,7 @@
 <body>
 
   <%= render 'home/navbar' %>
-  <div class="errors">
-    <%= flash[:error] if flash[:error]  %> <br>
-  </div>
+
   <%= yield %>
 
   <%= render 'home/new_question_form' %>
