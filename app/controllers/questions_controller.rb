@@ -6,6 +6,10 @@ class QuestionsController < ApplicationController
     @answers = @question.answers.order(created_at: :desc)
   end
 
+  def edit
+    @question = Question.find(params[:id])
+  end
+
   def create
     Question.create(question_params)
     session[:current_user_email] = question_params[:email]
